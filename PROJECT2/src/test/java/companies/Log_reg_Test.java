@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Reporter;
+import org.testng.annotations.Test;
 
 public class Log_reg_Test {
 	
@@ -19,8 +21,11 @@ public class Log_reg_Test {
 	public void setRegister(WebElement register) {
 		this.register = register;
 	}
-	
-	
+	@Test
+	public void m1()
+	{
+	Reporter.log("completed");
+	}
 	
 
 }
